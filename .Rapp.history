@@ -1,0 +1,58 @@
+install.packages("KernSmooth")
+citation(KernSmooth)
+citation()
+citation("KernSmooth")
+copyright("KernSmooth")
+cube <- function(x, n){ x^3}
+cube(3)
+x <- 10
+if(x>5){x<-0}
+x
+x <- 1:10
+if(x>5){x<-0}
+f <- function(x){g<-function(y){y+z} z<-4 x+g(x)}
+f <- function(x {})
+library(httr)
+oauth_endpoints("github")
+myapp <- oauth_app("github",#
+                   key = "b30ebb0c3db3fb59a9f0",#
+                   secret = "3117523d151f77da671d0d105bb844fd14435b93")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+library(httr)
+library(httpuv)
+oauth_endpoints("github")
+myapp <- oauth_app("github",#
+                   key = "b30ebb0c3db3fb59a9f0",#
+                   secret = "3117523d151f77da671d0d105bb844fd14435b93")
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
+gtoken <- config(token = github_token)
+req <- GET("https://api.github.com/rate_limit", gtoken)
+stop_for_status(req)
+content(req)
+library(swirl)
+swirl()
+str(mpg)
+qplot(displ, hwy, data=mpg)
+getwd()
+setwd("./Desktop/ClassDocs/data")
+data <- read.csv("activity.csv", header = TRUE, stringsAsFactors = FALSE)#
+data$date <- strptime(data$date, format="%Y-%m-%d")
+data2 <- na.omit(data) # Remove NAs#
+data2_sum <- aggregate(data2$steps, by=list(day(data2$date)), sum) # Aggregate sum#
+names(data2_sum) <- c("Day", "Total_Steps") # Rename columns#
+hist(data2_sum$Total_Steps, breaks = length(data2_sum$Day), main="Total Steps Histogram", xlab="Steps taken")
+library(lubridate)#
+data2 <- na.omit(data) # Remove NAs#
+data2_sum <- aggregate(data2$steps, by=list(day(data2$date)), sum) # Aggregate sum#
+names(data2_sum) <- c("Day", "Total_Steps") # Rename columns#
+hist(data2_sum$Total_Steps, breaks = length(data2_sum$Day), main="Total Steps Histogram", xlab="Steps taken")
+data_mean <- mean(data2_sum$Total_Steps)#
+data_median <- median(data2_sum$Total_Steps)
+data_mean
+data_median
+data2_sum$Total_Steps
+interval_steps <- aggregate(data2$steps, by=list(data2$interval), sum)#
+mean_steps <- aggregate(data2$steps, by=list(data2$interval), mean)#
+#
+plot(interval_steps, mean_steps, type="l", main="Interval Acitivity", xlab="5 min Interval", ylab="Average Steps")
+plot(interval_steps, mean_steps, type="l")
